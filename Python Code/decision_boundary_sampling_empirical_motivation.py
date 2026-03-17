@@ -219,7 +219,7 @@ for name in RUN_DATASETS:
     ds = datasets[name]
     save_path = os.path.join(SAVE_DIR, f'{name}_victim.pt')
 
-    # CHANGE 2: Skip training if model already saved
+    # Skip training if model already saved
     if os.path.exists(save_path):
         print(f"  Already trained, loading from {save_path}")
         model, checkpoint = load_victim(name, ds, device)
