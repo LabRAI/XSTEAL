@@ -32,7 +32,7 @@ import numpy as np
 
 # Setting up Datasets
 DATASET_NAMES = [
-    'AIDS', 'MUTAG', 'PTC_FM', 'NCI1', 'Tox21_AhR_training',
+    'AIDS', 'MUTAG', 'NCI1', 'Tox21_AhR_training',
 ]
 
 datasets = {}
@@ -208,7 +208,7 @@ victim_configs = {}
 dataset_splits = {}
 
 RUN_DATASETS = [
-    'AIDS', 'MUTAG', 'PTC_FM', 'NCI1', 'Tox21_AhR_training',
+    'AIDS', 'MUTAG', 'NCI1', 'Tox21_AhR_training',
 ]
 
 for name in RUN_DATASETS:
@@ -219,7 +219,7 @@ for name in RUN_DATASETS:
     ds = datasets[name]
     save_path = os.path.join(SAVE_DIR, f'{name}_victim.pt')
 
-    # Skip training if model already saved
+    # CHANGE 2: Skip training if model already saved
     if os.path.exists(save_path):
         print(f"  Already trained, loading from {save_path}")
         model, checkpoint = load_victim(name, ds, device)
@@ -408,7 +408,7 @@ for name in RUN_DATASETS:
 # Load boundary results from Drive
 BOUNDARY_DIR = '/content/drive/MyDrive/GNN_MEA/boundary_results/'
 boundary_results = {}
-for name in ['AIDS','MUTAG', 'PTC_FM', 'NCI1', 'Tox21_AhR_training']:
+for name in ['AIDS','MUTAG', 'NCI1', 'Tox21_AhR_training']:
     path = os.path.join(BOUNDARY_DIR, f'{name}_boundary.pt')
     boundary_results[name] = torch.load(path, weights_only=False)
     b = boundary_results[name]
@@ -538,7 +538,7 @@ def build_all_training_sets(dataset, boundary_pairs, non_boundary_idx,
     return boundary_data, non_boundary_data, hybrid_data, random_data
 
 # Run Unified Comparison
-for name in ['AIDS', 'MUTAG', 'PTC_FM', 'NCI1', 'Tox21_AhR_training']:
+for name in ['AIDS', 'MUTAG', 'NCI1', 'Tox21_AhR_training']:
     print(f"\n{'='*50}")
     print(f"Unified comparison: {name}")
     print(f"{'='*50}")
