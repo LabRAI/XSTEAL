@@ -1,0 +1,74 @@
+{
+  "AIDS_GCN_Boundary-P1_none_70pct": {
+    "fidelity": 0.8017,
+    "accuracy": 0.6897,
+    "n_train": 160,
+    "timestamp": "2026-04-06T00:56:14.429547"
+  },
+  "AIDS_GCN_Boundary-P2_GNN_70pct": {
+    "fidelity": 0.8534,
+    "accuracy": 0.7069,
+    "n_train": 280,
+    "timestamp": "2026-03-21T04:51:33.339701"
+  },
+  "AIDS_GCN_Hybrid-P1_none_70pct": {
+    "fidelity": 0.8534,
+    "accuracy": 0.7069,
+    "n_train": 280,
+    "timestamp": "2026-04-06T00:57:46.580597"
+  },
+  "AIDS_GCN_Hybrid-P2_GNN_70pct": {
+    "fidelity": 0.9138,
+    "accuracy": 0.7672,
+    "n_train": 280,
+    "timestamp": "2026-03-21T05:22:32.933844"
+  },
+  "NCI1_GCN_Boundary-P1_none_70pct": {
+    "fidelity": 0.949,
+    "accuracy": 0.6642,
+    "n_train": 528,
+    "timestamp": "2026-04-06T01:11:50.900037"
+  },
+  "NCI1_GCN_Boundary-P2_GNN_70pct": {
+    "fidelity": 0.9522,
+    "accuracy": 0.6654,
+    "n_train": 574,
+    "timestamp": "2026-03-28T22:07:30.719351"
+  },
+  "NCI1_GCN_Hybrid-P1_none_70pct": {
+    "fidelity": 0.9375,
+    "accuracy": 0.6556,
+    "n_train": 574,
+    "timestamp": "2026-04-06T01:15:03.655317"
+  },
+  "NCI1_GCN_Hybrid-P2_GNN_70pct": {
+    "fidelity": 0.951,
+    "accuracy": 0.6691,
+    "n_train": 573,
+    "timestamp": "2026-03-28T23:27:00.737096"
+  },
+  "Tox21_AhR_training_GCN_Boundary-P1_none_70pct": {
+    "fidelity": 0.7143,
+    "accuracy": 0.6071,
+    "n_train": 36,
+    "timestamp": "2026-04-06T01:33:14.852080"
+  },
+  "Tox21_AhR_training_GCN_Boundary-P2_GNN_70pct": {
+    "fidelity": 0.9643,
+    "accuracy": 0.8571,
+    "n_train": 374,
+    "timestamp": "2026-03-21T11:07:30.170072"
+  },
+  "Tox21_AhR_training_GCN_Hybrid-P1_none_70pct": {
+    "fidelity": 0.8571,
+    "accuracy": 0.8929,
+    "n_train": 607,
+    "timestamp": "2026-04-06T01:36:34.897527"
+  },
+  "Tox21_AhR_training_GCN_Hybrid-P2_GNN_70pct": {
+    "fidelity": 0.9286,
+    "accuracy": 0.9643,
+    "n_train": 929,
+    "timestamp": "2026-03-21T14:06:31.253902"
+  }
+}
