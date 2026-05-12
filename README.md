@@ -44,13 +44,12 @@ GNN-MEA/
 | **Explainers** | PGExplainer, GNNExplainer |
 | **Baselines** | Random, Non-boundary, EGSteal-BB, Hybrid (50/50 Boundary + Random) |
 | **Metric** | Fidelity (surrogate ↔ victim agreement on class-balanced test split); accuracy reported as secondary |
-| **Seeds** | GCN: 3 seeds (42, 123, 456); GAT / GraphSAGE: single seed |
 
 Victims are trained with Adam (`lr = 1e-3`, `wd = 5e-4`) under a grid of `hidden ∈ {64, 128} × epochs ∈ {300, 500, 700, 1000}`.
 
 ## Headline results
 
-Fidelity at a 70% query budget on GCN (mean over 3 seeds):
+Fidelity at a 70% query budget on GCN:
 
 | Dataset      | Random | EGSteal-BB | **Boundary** | Hybrid |
 |--------------|--------|------------|--------------|--------|
