@@ -1,11 +1,11 @@
-# GNN-MEA
+# XSTEAL
 
 Code, trained checkpoints, and experimental results for a study of black-box model extraction attacks against graph-classification GNNs.
 
 ## Repository layout
 
 ```
-GNN-MEA/
+XSTEAL/
 ├── Colab Notebooks/                       # all code
 │   ├── Datasets,_Victim,_Models,_and_Explainer.ipynb
 │   ├── Decision_Boundary_Sampling_Empirical_Motivation.ipynb
